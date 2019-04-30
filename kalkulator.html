@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <div class="main">
+        <form action="" name="kalkulator">
+            <input type="text" class="tampilan" name="tampilan">
+        <table>
+            <tr>
+                    <td><input type="button" value="C" onclick="kalkulator.tampilan.value =''"></td>
+                    <td><input type="button" value="<" onclick="kalkulator.tampilan.value = substring(0, kalkulator.tampilan.value.length-1)"> </td>
+                    <td><input type="button" value="/" onclick="kalkulator.tampilan.value += '/'"> </td>
+                    <td><input type="button" value="x" onclick="kalkulator.tampilan.value += '*'"> </td>
+            <tr>
+                    <td><input type="button" value="7" onclick="kalkulator.tampilan.value += '7'"> </td>
+                    <td><input type="button" value="8" onclick="kalkulator.tampilan.value += '8'"> </td>
+                    <td><input type="button" value="9" onclick="kalkulator.tampilan.value += '9'"> </td>
+                    <td><input type="button" value="-" onclick="kalkulator.tampilan.value += '-'"> 
+            <tr>
+                    <td><input type="button" value="4" onclick="kalkulator.tampilan.value += '4'"> </td>
+                    <td><input type="button" value="5" onclick="kalkulator.tampilan.value += '5'"> </td>
+                    <td><input type="button" value="6" onclick="kalkulator.tampilan.value += '6'"> </td>
+                    <td><input type="button" value="+" onclick="kalkulator.tampilan.value += '+'"> </td>
+            <tr>
+                    <td><input type="button" value="1" onclick="kalkulator.tampilan.value += '1'"> </td>
+                    <td><input type="button" value="2" onclick="kalkulator.tampilan.value += '2'"> </td>
+                    <td><input type="button" value="3" onclick="kalkulator.tampilan.value += '3'"> </td>
+                    <td rowspan="5"><input type="button" style="height: 105px;" value="=" onclick="kalkulator.tampilan.value = eval(kalkulator.tampilan.value)"> </td>
+            <tr>
+                    <td colspan="2"><input type="button" style="width: 105px;" value="0" onclick="kalkulator.tampilan.value += '0'"> </td>
+                    <td><input type="button" value="." onclick="kalkulator.tampilan.value += '.'"> </td>
+        </table>
+    </form>
+</form>
+    </div>
+</body>
+</html>
